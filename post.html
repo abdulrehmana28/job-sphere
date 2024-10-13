@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - JobSphere</title>
+    <link rel="icon" href="images/emblem.png" />
+  </head>
+  <body>
+    <!-- Start of Navigation bar-->
+    <header>
+      <nav>
+        <div>
+          <table height="100px" width="100%">
+            <tr>
+              <td>
+                &nbsp;&nbsp;<img src="images/logo.png" alt="logo" width="30%" />
+              </td>
+              <td><a href="index.html">Home</a></td>
+              <td><a href="jobs.html">Jobs</a></td>
+              <td><a href="gallery.html">Gallery</a></td>
+              <td><a href="about.html">About us</a></td>
+              <td><a href="contact.html">Contact us</a></td>
+              <td>
+                <form action="jobs.html" method="get">
+                  <input
+                    type="text"
+                    id="search"
+                    name="search"
+                    placeholder="Find your dream job"
+                    required
+                  />
+                  <input type="submit" value="Search" />
+                </form>
+              </td>
+              <td>
+                <form action="login.html" method="get">
+                  <button type="submit">Log In</button>
+                </form>
+              </td>
+              <td>
+                <form action="signup.html" method="get">
+                  <button type="submit">Sign Up</button>
+                </form>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </nav>
+      <hr />
+    </header>
+    <!-- End of Navigation bar-->
+    <main>
+      <table align="center" width="60%">
+        <tr>
+          <td>
+            <div>
+              <h2>Post a Job</h2>
+              <form action="posted.html" method="POST">
+                <fieldset>
+                  <legend>Company Information</legend>
+
+                  <!-- Company Name -->
+                  <label for="companyName">Company Name:</label>
+                  <input
+                    type="text"
+                    id="companyName"
+                    name="companyName"
+                    placeholder="Enter the company name"
+                    required
+                  /><br /><br />
+
+                  <!-- Company Website -->
+                  <label for="companyWebsite">Company Website:</label>
+                  <input
+                    type="url"
+                    id="companyWebsite"
+                    name="companyWebsite"
+                    placeholder="Enter the company website"
+                    required
+                  /><br /><br />
+
+                  <!-- Company Location -->
+                  <label for="companyLocation">Company Location:</label>
+                  <input
+                    type="text"
+                    id="companyLocation"
+                    name="companyLocation"
+                    placeholder="Enter the company location"
+                    required
+                  /><br /><br />
+                </fieldset>
+                <br />
+                <fieldset>
+                  <legend>Job Information</legend>
+
+                  <!-- Job Title -->
+                  <label for="jobTitle">Job Title:</label>
+                  <input
+                    type="text"
+                    id="jobTitle"
+                    name="jobTitle"
+                    placeholder="Enter the job title"
+                    required
+                  /><br /><br />
+
+                  <!-- Job Type -->
+                  <label for="jobType">Job Type:</label>
+                  <select id="jobType" name="jobType" required>
+                    <option value="" disabled selected>Select job type</option>
+                    <option value="full-time">Full-Time</option>
+                    <option value="part-time">Part-Time</option>
+                    <option value="internship">Internship</option>
+                    <option value="contract">Contract</option>
+                    <option value="freelance">Freelance</option></select
+                  ><br /><br />
+
+                  <!-- Job Location -->
+                  <label for="jobLocation">Job Location:</label>
+                  <input
+                    type="text"
+                    id="jobLocation"
+                    name="jobLocation"
+                    placeholder="Enter the job location"
+                    required
+                  /><br /><br />
+
+                  <!-- Salary Range -->
+                  <label for="salary">Salary Range (Optional):</label>
+                  <input
+                    type="text"
+                    id="salary"
+                    name="salary"
+                    placeholder="Enter the salary range"
+                  /><br /><br />
+
+                  <!-- Job Description -->
+                  <label for="jobDescription">Job Description:</label>
+                  <textarea
+                    id="jobDescription"
+                    name="jobDescription"
+                    placeholder="Describe the role, responsibilities, and requirements"
+                    rows="6"
+                    required
+                  ></textarea
+                  ><br /><br />
+                </fieldset>
+                <br />
+                <fieldset>
+                  <legend>Application Information</legend>
+
+                  <!-- Application Deadline -->
+                  <label for="applicationDeadline">Application Deadline:</label>
+                  <input
+                    type="date"
+                    id="applicationDeadline"
+                    name="applicationDeadline"
+                  /><br /><br />
+
+                  <!-- Contact Email -->
+                  <label for="contactEmail">Contact Email:</label>
+                  <input
+                    type="email"
+                    id="contactEmail"
+                    name="contactEmail"
+                    placeholder="Enter the contact email for applicants"
+                    required
+                  /><br /><br />
+                </fieldset>
+                <br />
+
+                <!-- Submit Button -->
+                <input type="submit" value="Post Job" />
+              </form>
+              <br /><br />
+            </div>
+          </td>
+        </tr>
+      </table>
+    </main>
+    <!-- Start of Footer section -->
+    <br />
+    <hr />
+    <br />
+    <footer>
+      <div>
+        <table width="100%">
+          <tr>
+            <th width="30%">JobSphere</th>
+            <th width="35%">Quick Links</th>
+            <th width="35%">Connect With Us</th>
+          </tr>
+          <tr>
+            <td width="30%" align="center">
+              <address>
+                <p>1234 Vinewood Blvd, Suite 567</p>
+                <p>Vinewood, Los Santos, CA 90001</p>
+                Mail us at:
+                <a href="mailto:hello@jobsphere.com"></a>hello@jobsphere.com
+                <p>United States</p>
+              </address>
+            </td>
+            <td align="center">
+              <p><a href="index.html" /> Home</p>
+              <p><a href="jobs.html" /> Jobs</p>
+              <p><a href="contact.html" /> Contact Us</p>
+              <p><a href="about.html" /> About Us</p>
+            </td>
+            <td align="center">
+              <p><a href="#" /> facebook.com/jobshpere</p>
+              <p><a href="#" /> instagram.com/jobshpere</p>
+              <p><a href="#" /> youtube.com/jobshpere</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <hr />
+      <center>&copy; 2024 jobsphere.com All Rights Reserved</center>
+    </footer>
+    <!-- End of Footer section -->
+  </body>
+</html>
