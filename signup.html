@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign up - JobSphere</title>
+  <link rel="icon" href="images/emblem.png">
+</head>
+<body>
+<!-- Start of Navigation bar-->
+<header>
+  <nav>
+    <div>
+      <table height="100px" width="100%">
+        <tr>
+          <td>
+            &nbsp;&nbsp;<img src="images/logo.png" alt="logo" width="30%" />
+          </td>
+          <td><a href="index.html">Home</a></td>
+          <td><a href="jobs.html">Jobs</a></td>
+          <td><a href="gallery.html">Gallery</a></td>
+          <td><a href="about.html">About us</a></td>
+          <td><a href="contact.html">Contact us</a></td>
+          <td>
+            <form action="jobs.html" method="get">
+              <input
+                      type="text"
+                      id="search"
+                      name="search"
+                      placeholder="Find your dream job"
+                      required
+              />
+              <input type="submit" value="Search" />
+            </form>
+          </td>
+          <td>
+            <form action="login.html" method="get">
+              <button type="submit">Log In</button>
+            </form>
+          </td>
+          <td>
+            <form action="signup.html" method="get">
+              <button type="submit">Sign Up</button>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </nav>
+  <hr />
+</header>
+<!-- nave bar ends-->
+<br>
+<br>
+<main>
+    <table width="30%" align="center">
+      <tr>
+        <td>
+          <form action="login.html" method="POST">
+            <fieldset>
+              <legend>Sign Up</legend>
+
+              <!-- Name -->
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name" size="30" required><br><br>
+
+              <!-- Email -->
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email" size="30" required><br><br>
+
+              <!-- Password -->
+              <label for="password">Password:</label><br>
+              <input type="password" id="password" name="password" size="30" required><br><br>
+
+              <!-- Confirm Password -->
+              <label for="confirm_password">Confirm Password:</label><br>
+              <input type="password" id="confirm_password" name="confirm_password" size="30" required><br><br>
+
+              <!-- User Type Selection -->
+              <label for="user_type">Register as:</label><br>
+              <input type="radio" id="job_seeker" name="user_type" value="Job Seeker" required>
+              <label for="job_seeker">Job Seeker</label><br>
+              <input type="radio" id="employer" name="user_type" value="Employer" required>
+              <label for="employer">Employer</label><br><br>
+
+
+              <input type="submit" value="Sign Up"><br><br>
+              <p>Already have an account? <a href="login.html">Login here</a>.</p>
+            </fieldset>
+          </form>
+        </td>
+      </tr>
+    </table>
+</main>
+<br>
+<br>
+
+<hr/>
+<!-- Start of Footer section -->
+<br/>
+<footer>
+  <div>
+    <table  width="100%">
+      <tr>
+        <th width="30%">JobSphere</th>
+        <th width="35%">Quick Links</th>
+        <th width="35%">Connect With Us</th>
+      </tr>
+      <tr>
+        <td width="30%" align="center">
+          <address>
+            <p>1234 Vinewood Blvd, Suite 567</p>
+            <p>Vinewood, Los Santos, CA 90001</p>
+            Mail us at: <a href="mailto:hello@jobsphere.com"></a>hello@jobsphere.com
+            <p>United States</p>
+          </address>
+        </td>
+        <td align="center">
+          <p><a href="index.html"/> Home</p>
+          <p><a href="jobs.html"/> Jobs</p>
+          <p><a href="contact.html"/> Contact Us</p>
+          <p><a href="about.html"/> About Us</p>
+        </td>
+        <td align="center">
+          <p><a href="#"/> facebook.com/jobshpere</p>
+          <p><a href="#"/> instagram.com/jobshpere</p>
+          <p><a href="#"/> youtube.com/jobshpere</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <hr/>
+  <center>&copy; 2024 jobsphere.com All Rights Reserved</center>
+</footer>
+<!-- Footer ends -->
